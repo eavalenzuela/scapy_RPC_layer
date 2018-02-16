@@ -4,8 +4,7 @@ A custom-built(but very bare-bones) extension for [scapy](https://github.thousan
 
 ## Overview
 
-This was made necessary because the existing RPC tools(chiefly rpcinfo) do not have support for modifying low-level settings like the source port.
-Because of an anomalous IDS alert indicating that an RPC portmap request had been made against our servers, along with existing Qualys tickets indicating a UDP source-port firewall bypass issue, it was necessary to verify whether these portmaps were actually returning data to external callers.
+This was made necessary because the existing RPC tools(chiefly rpcinfo) do not have support for modifying low-level settings like the source port, and I needed to examine RPC portmap requests originating over port 53.
 
 ## Build Methodology
 

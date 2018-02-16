@@ -19,14 +19,14 @@ RPC (Remote Procedure Call)
 class RPCCall(Packet):
     name = "Remote Procedure Call"
     fields_desc = [
-            IntField("xid", 1),
-            IntField("msg_type", 0),
-            IntField("rpcvers", 2),
-            IntField("prog", 100000),
-            IntField("vers", 2),
-            IntField("proc", 4),
-            IntField("cred_flavor", 0),
-            IntField("cred_len", 0),
-            IntField("verifier_flavor", 0),
-            IntField("verifier_len", 0)]
+            LongField("xid", 1),
+            LongField("msg_type", 0),
+            LongField("rpcvers", 2),
+            LongField("prog", 100000),
+            LongField("vers", 2),
+            LongField("proc", 4),
+            LongField("cred_flavor", 0),
+            LongField("cred_len", 0),
+            LongField("verifier_flavor", 0),
+            LongField("verifier_len", 0)]
 
